@@ -1,0 +1,32 @@
+[
+    {
+        "_id": "67rdca3eeb7f6fgeed471198",
+        "name": "Дни Города",
+        "color": "primary"
+    },
+    {
+        "_id": "67rdca3eeb7f6fgeed471100",
+        "name": "Приезжает Артист",
+        "color": "secondary"
+    },
+    {
+        "_id": "67rdca3eeb7f6fgeed4711012",
+        "name": "Велеколепная природа",
+        "color": "success"
+    },
+    {
+        "_id": "67rdca3eeb7f6fgeed471101",
+        "name": "Экстрим",
+        "color": "danger"
+    },
+    {
+        "_id": "67rdca3eeb7f6fgeed471102",
+        "name": "Секретные места",
+        "color": "info"
+    },
+    {
+        "_id": "67rdca3eeb7f6fgeed471103",
+        "name": "Места в которых нужно побывать",
+        "color": "dark"
+    }
+]

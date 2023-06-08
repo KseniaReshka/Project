@@ -1,0 +1,57 @@
+[
+     {
+    "image": "https://s0.rbk.ru/v6_top_pics/media/img/7/49/756306673445497.jpg",
+    "city": "Казань",
+    "events": [
+      "67rdca3eeb7f6fgeed471198",
+      "67rdca3eeb7f6fgeed471100",
+      "67rdca3eeb7f6fgeed4711012"
+    ],
+    "rate": 8
+  },
+   {
+    "image": "https://www.gorodperm.ru/upload/pages/1006918/1.jpg",
+    "city": "Пермь",
+    "events": [
+      "67rdca3eeb7f6fgeed471101"
+    ],
+    "rate": 4
+  },
+  {
+    "image": "https://wikiway.com/upload/iblock/14e/Nizhniy-Novgorod.jpg",
+    "city": "Нижний Новгород",
+    "events": [
+      "67rdca3eeb7f6fgeed471102"
+    ],
+    "rate": 6
+  },
+  {
+    "image": "https://img.magput.ru/pics/large/dbbfd13c-674b-4ce4-9740-4123c35c7ca1.jpg",
+    "city": "Москва",
+    "events": [
+      "67rdca3eeb7f6fgeed471103",
+      "67rdca3eeb7f6fgeed4711012",
+      "67rdca3eeb7f6fgeed471100"
+    ],
+    "rate": 5
+  },
+  {
+    "image": "https://s.101hotelscdn.ru/uploads/image/city/13/1460512_thumb.jpg",
+    "city": "Санкт-Петербург",
+    "events": [
+      "67rdca3eeb7f6fgeed471103",
+      "67rdca3eeb7f6fgeed471102"
+    ],
+    "rate": 7
+  },
+  {
+    "image": "https://img.geliophoto.com/parkkrasnodar/02_parkkrasnodar.jpg",
+    "city": "Краснодар",
+    "events": [
+      "67rdca3eeb7f6fgeed471102",
+      "67rdca3eeb7f6fgeed4711012",
+      "67rdca3eeb7f6fgeed471100"
+    ],
+    "rate": 9
+  }
+]
