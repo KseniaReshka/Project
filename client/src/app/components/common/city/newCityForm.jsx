@@ -8,51 +8,42 @@ import getRandomInt from "../../../utils/getRandomInt";
 
 const NewCityForm = () => {
     const [value, setValue] = useState("");
-
-    // const [data, setData] = useState({});
-    // const [errors, setErrors] = useState({});
+    const [errors, setErrors] = useState({});
     const dispatch = useDispatch();
     const cities = useSelector(getCities());
-    console.log("cities", cities);
-    // const handleChange = (target) => {
-    //     setData((prevState) => ({
-    //         ...prevState,
-    //         [target.name]: target.value
-    //     }));
-    //     console.log("datatatat", data);
-    // };
-    // function removedCity(id) {
-    //     console.log("ID", id);
-    //     dispatch(removeCity(id));
-    // }
-    // const validatorConfig = {
-    //     content: {
-    //         isRequired: {
-    //             message: "Сообщение не может быть пустым"
-    //         }
-    //     }
-    // };
+    console.log("errors", errors);
 
-    // const validate = () => {
-    //     const errors = validator(data, validatorConfig);
-    //     setErrors(errors);
-    //     return Object.keys(errors).length === 0;
-    // };
+    function removedCity(id) {
+        console.log("ID", id);
+        dispatch(removeCity(id));
+    }
+    const validatorConfig = {
+        content: {
+            isRequired: {
+                message: "Сообщение не может быть пустым"
+            }
+        }
+    };
+
+    const validate = () => {
+        const errors = validator(value, validatorConfig);
+        setErrors(errors);
+        return Object.keys(errors).length === 0;
+    };
     const clearForm = () => {
         setValue("");
-        // setErrors({});
+        setErrors({});
     };
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("value", value);
-        // const isValid = validate();
-        // if (!isValid) return;
+        const isValid = validate();
+        if (!isValid) return;
         const content = {
             name: getRandomInt(1, 1500085).toString(),
             city: value
         };
         dispatch(createCity(content));
-        // onSubmit(data);
         clearForm();
     };
     return (
@@ -78,9 +69,9 @@ const NewCityForm = () => {
                       <div key={el._id} className="container mt-5">
                           <div className="btn btn-m2">
                               <h2>{el.city}</h2>
-                              {/* <button onClick={() => removedCity(el._id)}>
-                                      <i className="bi bi-backspace-fill"></i>
-                                  </button> */}
+                              <button onClick={() => removedCity(el._id)}>
+                                  <i className="bi bi-backspace-fill"></i>
+                              </button>
                           </div>
                       </div>
                   ))
