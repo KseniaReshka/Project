@@ -15,7 +15,6 @@ const HolidayCard = ({ city }) => {
                 const y = events.map((ev) => {
                     if (ev.name === id) {
                         eventArr.push(ev);
-                        console.log("eventArr", eventArr);
                         return ev.name;
                     }
                     return null;

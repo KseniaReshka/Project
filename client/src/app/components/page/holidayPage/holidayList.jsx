@@ -20,10 +20,6 @@ const HolidayListPage = () => {
     const [sortBy, setSortBy] = useState({ path: "city", order: "asc" });
     const pageSize = 4;
 
-    const handleDelete = (holId) => {
-        // setUsers(users.filter((user) => user._id !== userId));
-        console.log("userId");
-    };
     useEffect(() => {
         setCurrentPage(1);
     }, [selectedCity, searchQuery]);
@@ -78,6 +74,7 @@ const HolidayListPage = () => {
             <div className="d-flex">
                 {cities && (
                     <div className="d-flex flex-column flex-shrink-0 p-3">
+                        <p>Найди мероприятия в любимом городе</p>
                         <GroupList
                             selectedItem={selectedCity}
                             items={cities}
@@ -107,7 +104,6 @@ const HolidayListPage = () => {
                                 holidays={holidaysCrop}
                                 onSort={handleSort}
                                 selectedSort={sortBy}
-                                onDelete={handleDelete}
                             />
                         )}
                         <div className="d-flex justify-content-center">

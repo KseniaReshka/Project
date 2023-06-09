@@ -8,10 +8,6 @@ const GroupList = ({
     onItemSelect,
     selectedItem
 }) => {
-    console.log(" items", items);
-    console.log("onItemSelect", onItemSelect);
-    console.log("selectedItem", selectedItem);
-
     if (!Array.isArray(items)) {
         return (
             <ul className="list-group">

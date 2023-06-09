@@ -48,7 +48,6 @@ http.interceptors.response.use(
     (res) => {
         if (configFile.isFireBase) {
             res.data = { content: transformData(res.data) };
-            console.log("res.data", res.data);
         }
         return res;
     },

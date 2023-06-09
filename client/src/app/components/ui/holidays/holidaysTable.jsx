@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import EventsList from "./EventsList";
 import Table from "../../common/table";
 import { Link } from "react-router-dom";
-// import { useSelector } from "react-redux";
-// import { getevent } from "../../../store/events";
 
 const HolidaysTable = ({ holidays, onSort, selectedSort, ...rest }) => {
     const columns = {
@@ -48,7 +46,6 @@ HolidaysTable.propTypes = {
     holidays: PropTypes.array.isRequired,
     onSort: PropTypes.func.isRequired,
     selectedSort: PropTypes.object.isRequired
-    // onToggleBookMark: PropTypes.func.isRequired
 };
 
 export default HolidaysTable;
