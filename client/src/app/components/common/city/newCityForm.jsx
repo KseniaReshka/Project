@@ -57,8 +57,6 @@ const NewCityForm = () => {
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                 />
-
-                {/* <div className="d-flex justify-content-end"> */}
                 <button type="submit" className="btn btn-primary">
                     Создать{" "}
                 </button>
@@ -79,8 +77,5 @@ const NewCityForm = () => {
         </div>
     );
 };
-// NewCityForm.propTypes = {
-//     onSubmit: PropTypes.func
-// };
 
 export default NewCityForm;
